@@ -1,5 +1,6 @@
 // Assignment code here
-
+ var passLength = prompt("How many characters do you want in your password? Enter a number between 8 and 128, inclusive.");
+ var charType = prompt("Which type(s) of characters do you want? Please choose at least one: uppercase, lowercase, numeric, or special.")
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
