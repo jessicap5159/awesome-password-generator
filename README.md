@@ -3,14 +3,15 @@
 ## Purpose/Description
 I refactored the code for this page to produce a unique password between 8 and 128 characters long at the click of a button. The user can choose the length and character type, including uppercase, lowercase, special characters, and numbers; from a series of prompts that appear when the button is clicked. 
 
-![screen shot of code](./assets/images/pass.png)
-![screen shot of web application](./assets/images/pass2.png)
+![screen shot of code](https://user-images.githubusercontent.com/75810335/108263060-9b170e80-711a-11eb-8733-ab836cf03650.png)
+![screen shot of web application](https://user-images.githubusercontent.com/75810335/108263093-a36f4980-711a-11eb-8b37-4cd2a377c43e.png)
+
 
 ## Built With
 HTML, CSS, and JavaScript
 
 ## Website
-
+https://jessicap5159.github.io/awesome-password-generator/
 
 ## Credits
 A lot of help from John Baxter; also w3schools.com, stackoverflow.com, geeksforgeeks.org, and tutorialspoint.com. 
@@ -19,7 +20,6 @@ A lot of help from John Baxter; also w3schools.com, stackoverflow.com, geeksforg
 GNU GENERAL PUBLIC LICENSE Version 3, 29 June 2007
 
 Copyright (C) 2007 Free Software Foundation, Inc. https://fsf.org/ Everyone is permitted to copy and distribute verbatim copies of this license document, but changing it is not allowed.
-
                         Preamble
 The GNU General Public License is a free, copyleft license for software and other kinds of works.
 
