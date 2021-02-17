@@ -15,17 +15,19 @@ var passwordText = document.querySelector("#password");
   if (promptLength % 1 != 0)
   return("Please provide the input as a whole number. Click the red button to try again.");
   if (promptLength < 8)
-  return("Please provide the input as a whole number. Click the red button to try again.");
+  return("Please provide the input as a number between 8 and 128. Click the red button to try again.");
   if (promptLength > 128)
-  return("Please provide the input as a whole number. Click the red button to try again.");
+  return("Please provide the input as a number between 8 and 128. Click the red button to try again.");
 
   var upperSelection = confirm("Would you like to use uppercase characters? Click 'okay' for yes, and 'cancel' for no.");
   var lowerSelection = confirm("Would you like to use lowercase characters? Click 'okay' for yes, and 'cancel' for no.");
   var specialSelection = confirm("Would you like to use special characters? Click 'okay' for yes, and 'cancel' for no.");
   var numberSelection = confirm("Would you like to use numbers? Click 'okay' for yes, and 'cancel' for no.");
+  if (upperSelection + lowerSelection + specialSelection + numberSelection == 0)
+  return("Please select at least one option. Click the red button to try again."); 
  }
 
-    // validate prompt answer
+    // validate prompt answer 
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
