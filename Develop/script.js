@@ -25,9 +25,26 @@ var passwordText = document.querySelector("#password");
   var numberSelection = confirm("Would you like to use numbers? Click 'okay' for yes, and 'cancel' for no.");
   if (upperSelection + lowerSelection + specialSelection + numberSelection == 0)
   return("Please select at least one option. Click the red button to try again."); 
+
+  var selectionArray = []
+  if (upperSelection){
+     selectionArray = selectionArray.concat(upperArray);
+  }
+  if (lowerSelection){
+     selectionArray = selectionArray.concat(lowerArray);
+  }
+
+  if (specialSelection){
+    selectionArray = selectionArray.concat(specialArray);
  }
 
-    // validate prompt answer 
+ if (numberSelection){
+  selectionArray = selectionArray.concat(numberArray);
+}
+return(selectionArray)
+
+ }
+
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
