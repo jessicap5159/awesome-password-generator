@@ -1,14 +1,16 @@
 // Assignment code here
 
+// Arrays //
 var upperArray = ["A", "B", "C", "D", "E", "F", "G", "H", "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z"];
 var lowerArray = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"];
 var numberArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
 var specialArray = ["!", "@", "#", "$", "%", "^", "&", "*", "?"];
 var passwordText = document.querySelector("#password");
 
-
+// Generate Password Function //
 var generatePassword = function () {
   var promptLength = prompt("How many characters do you want in your password? Enter a number between 8 and 128, inclusive.");
+  // Validation of Input 
   if (isNaN(promptLength)) {
     return ("Please provide the input as a number. Click the red button to try again.");
   }
@@ -26,6 +28,8 @@ var generatePassword = function () {
   if (upperSelection + lowerSelection + specialSelection + numberSelection == 0)
     return ("Please select at least one option. Click the red button to try again.");
 
+  // Merge user selections 
+
   var selectionArray = []
   if (upperSelection) {
     selectionArray = selectionArray.concat(upperArray);
@@ -41,17 +45,18 @@ var generatePassword = function () {
   if (numberSelection) {
     selectionArray = selectionArray.concat(numberArray);
   }
+
+  // Display password 
   let password = "";
   for (let i = 0; i < promptLength; i++) {
-    console.log("password",password)
+
     let rng = Math.floor(Math.random() * selectionArray.length);
-    console.log("random number",rng)
-    console.log("character selection",selectionArray[rng])
+
     password = password + selectionArray[rng]
 
 
-  } 
-  console.log("password output",password)
+  }
+
   return password
 }
 
@@ -71,7 +76,7 @@ function writePassword() {
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
 
-// 
+
 
 
 

@@ -86,6 +86,16 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  outline: none;
+}
+/* removed blue box and added animation to button */
+
+.btn:hover {background-color: #8e3e3e}
+
+.btn:active {
+  background-color: #ce371c;
+  box-shadow: 0 5px rgb(99, 98, 98);
+  transform: translateY(4px);
 }
 
 button[disabled] {
