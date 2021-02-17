@@ -3,7 +3,7 @@
 ## Purpose/Description
 I refactored the code for this page to produce a unique password between 8 and 128 characters long at the click of a button. The user can choose the length and character type, including uppercase, lowercase, special characters, and numbers; from a series of prompts that appear when the button is clicked. 
 
-![screen shot of code](./develop/images/pass.png)
+![screen shot of code](.projects/friendly-parakeet/develop/images/pass.png)
 ![screen shot of web application](./develop/assets/images/pass.png)
 
 ## Built With
