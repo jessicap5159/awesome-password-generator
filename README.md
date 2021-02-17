@@ -11,7 +11,7 @@ I refactored the code for this page to produce a unique password between 8 and 1
 HTML, CSS, and JavaScript
 
 ## Website
-https://jessicap5159.github.io/awesome-password-generator/index.html
+https://jessicap5159.github.io/awesome-password-generator/
 
 ## Credits
 A lot of help from John Baxter; also w3schools.com, stackoverflow.com, geeksforgeeks.org, and tutorialspoint.com. 
